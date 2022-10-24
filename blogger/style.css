@@ -1,0 +1,29 @@
+ /* --- BOXの定義 -------------------------------------------------*/
+.box {
+  position      : relative;            /* タイトル用に親要素定義  */
+  box-sizing    : border-box;          /* 罫線・余白も含む大きさ  */
+  margin        : 29px auto 0 auto;    /* BOXの位置               */
+  max-width     : 500px;               /* BOXの最大横幅           */
+  background    : #fff;                /* BOXの背景色             */
+  padding       : 25px 10px 25px 10px; /* BOX内の余白             */
+  border        : 3px solid #ff0000;   /* BOXの枠線               */
+  border-radius : 0 0 16px 16px;       /* BOXの角丸               */
+}
+ 
+ /* --- タイトル部分の定義 ----------------------------------------*/
+.box::before {
+  position      : absolute;          /* 親からの相対位置の定義  */
+  display       : inline-block;      /* インラインボックス定義  */
+  box-sizing    : border-box;        /* 罫線・余白も含む大きさ  */
+  line-height   : 1;                 /* 1行の高さを初期化       */
+  background    : #ff0000;           /* タイトル背景色          */
+  color         : #ffffff;           /* タイトルの文字色        */
+  content       : attr(title);       /* タイトルに[title]を表示 */
+  font-weight   : bold;              /* タイトルは太字          */
+  padding       : 8px 15px;          /* タイトル内の余白        */
+  top           : -32px;             /* 枠線分上を指定          */
+  left          : -3px;              /* 枠線分左を指定          */
+  right         : -3px;              /* タイトル右位置は1文字分 */
+  border-radius : 16px 16px 0 0;     /* タイトルの角丸          */
+  font-size     : 16px;              /* タイトルの文字サイズ    */
+}
