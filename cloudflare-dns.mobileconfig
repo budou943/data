@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Adds the Cloudflare DNS to Big Sur and iOS 14 based systems</string>
+	<string>Cloud flare DNS に接続するように設定します。</string>
 	<key>PayloadDisplayName</key>
 	<string>Cloudflare DNS over HTTPS</string>
 	<key>PayloadIdentifier</key>
