@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Cloud flare DNS に接続するように設定します。</string>
+	<string>Cloudflare DNS に接続するように設定します。</string>
 	<key>PayloadDisplayName</key>
 	<string>Cloudflare DNS over HTTPS</string>
 	<key>PayloadIdentifier</key>
